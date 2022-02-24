@@ -33,7 +33,7 @@
 #include <windows.h>
 
 #define SHOW_DEBUG_WINDOW 0
-#define CLIENT_TEST 1
+#define CLIENT_TEST 0
 
 #define MAX_CURSOR_WIDTH 32
 #define MAX_CURSOR_HEIGHT 32
@@ -608,7 +608,7 @@ static DWORD WINAPI ServerStartFunc(LPVOID param)
 
 static DWORD WINAPI ClientStartFunc(LPVOID param)
 {
-	clientMain();
+	//clientMain();
 	lprintf("client main has exited\n");
 
 	return 0;

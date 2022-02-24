@@ -56,7 +56,7 @@ public:
 	Region getVisibleRegion() const;
 
 	/// @bug these two methods are need to be reconciled
-	Rect frame() const;
+	Rect& frame();
 	Region getBoundingRegion() const;
 
 	/// Add a child window.  The child will be the topmost of all

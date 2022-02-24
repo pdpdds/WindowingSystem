@@ -66,7 +66,7 @@ ServerWindow::ServerWindow(const Rect& rect, bool doubleBuffer)
 }
 
 // This assumes a rectangular window
-Rect ServerWindow::frame() const
+Rect& ServerWindow::frame() 
 {
 	return fFrame;
 }

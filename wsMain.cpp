@@ -93,7 +93,7 @@ void spawnWindow(Surface *bitmap, int type)
 
 	windowRect.insetBy(BORDER_WIDTH, BORDER_WIDTH);
 	windowRect.top += TITLE_HEIGHT - BORDER_WIDTH;
-	ServerWindow *window;
+	ServerWindow *window = 0;
 
 	if (type == 0)
 		window = new BlankWindow(windowRect, 0xff, bitmap);
